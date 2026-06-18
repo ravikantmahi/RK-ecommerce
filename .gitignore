@@ -1,0 +1,58 @@
+# ============================================================
+#  RK PREMIUM E-COMMERCE — .gitignore
+#  Prevents sensitive files from being committed to Git
+# ============================================================
+
+# ── Environment & Secrets ────────────────────────────────────
+.env
+.env.local
+.env.production
+.env.staging
+*.env
+
+# ── OS & Editor files ────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# ── VS Code ──────────────────────────────────────────────────
+.vscode/settings.json
+.vscode/launch.json
+.vscode/extensions.json
+# (keep .vscode/tasks.json if you use build tasks)
+
+# ── Node.js (if you add a build step later) ──────────────────
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+
+# ── Build Output ─────────────────────────────────────────────
+dist/
+build/
+.cache/
+.parcel-cache/
+.next/
+
+# ── Logs ─────────────────────────────────────────────────────
+logs/
+*.log
+
+# ── Archives / Backups ───────────────────────────────────────
+*.zip
+*.tar.gz
+*.bak
+*.backup
+*~
+
+# ── Firebase ─────────────────────────────────────────────────
+.firebase/
+config.js
+firebase-debug.log
+firestore-debug.log
+ui-debug.log
